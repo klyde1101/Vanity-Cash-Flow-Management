@@ -1,0 +1,237 @@
+        body {
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            margin: 20px;
+            background-color: #fff;
+            padding: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+        }
+
+        .table-container {
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #424242;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+        }
+
+        .header {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-left,
+        .header-right,
+        .nav {
+            display: flex;
+            align-items: center;
+        }
+
+        .header-left {
+            margin-left: 20px;
+        }
+
+        .header-left img {
+            height: 50px;
+            margin-right: 20px;
+        }
+
+        .nav {
+            flex-grow: 1;
+            justify-content: flex-start;
+        }
+
+        .nav a {
+            background-color: transparent;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-family: 'Roboto', sans-serif;
+            font-size: 18px;
+            font-weight: 300;
+            margin-left: 50px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            text-decoration: none;
+        }
+
+        .nav a:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #f0f0f0;
+        }
+
+        .header-right {
+            margin-right: 30px;
+            justify-content: flex-end;
+        }
+
+        .header-right span {
+            margin-right: 10px;
+        }
+
+        .header-right button {
+            margin-left: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .edit-password-btn {
+            background-color: #4682B4;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+        }
+
+        .edit-password-btn:hover {
+            background-color: #5a9bd4;
+        }
+
+        .logout-btn {
+            background-color: #DC143C;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+        }
+
+        .logout-btn:hover {
+            background-color: #C41230;
+        }
+
+
+
+        .form-group {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .form-group select,
+        .form-group input[type="submit"] {
+            padding: 10px;
+            margin-right: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            height: 40px;
+            box-sizing: border-box;
+        }
+
+        .form-group input[type="submit"] {
+            background-color: #424242;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            flex: 0 0 auto;
+            align-self: stretch;
+        }
+
+        input[type="submit"] {
+            background-color: #424242;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            flex: 0 0 auto;
+            align-self: stretch;
+        }
+
+        .edit-btn,
+        .delete-btn {
+            text-decoration: none;
+            display: inline-block;
+            padding: 5px 10px;
+            margin: 0 2px;
+            font-size: 0.8em;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .edit-btn {
+            background-color: #45a049;
+        }
+
+        .delete-btn {
+            background-color: #f44336;
+        }
+
+        .total-expense-container {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
+            font-size: 18px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            text-align: left;
+            margin-left: 0px;
+            display: inline-block;
+            width: 60%;
+        }
+
+        .total-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .total-expense-container span {
+            font-weight: 400;
+        }
+
+        .add-expenses-button {
+            background-color: #4682B4;
+            border-radius: 4px;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            position: relative;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            height: 40px;
+            font-size: 12pt;
+        }

@@ -1,0 +1,124 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.form-container {
+    width: 300px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h2 {
+    text-align: center;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+input[type=text],
+input[type=number],
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.radio-group {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.radio-group label {
+    font-weight: normal;
+    margin-right: 15px;
+    text-align: left;
+}
+
+input[type=submit],
+.button {
+    width: 120px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 0;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+}
+
+input[type=submit]:hover,
+.button:hover {
+    background-color: #45a049;
+}
+
+.button.cancel {
+    background-color: #f44336;
+}
+
+.button.cancel:hover {
+    background-color: #e53935;
+}
+
+.nav-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.color-option {
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+.white {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.black {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.purple {
+    background-color: #800080;
+    color: #ffffff;
+}
+
+
+.edit-btn,
+.delete-btn {
+    text-decoration: none;
+    color: white;
+    padding: 3px 8px;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+}
+
+.edit-btn {
+    background-color: #45a049;
+}
+
+.delete-btn {
+    background-color: #f44336;
+}

@@ -156,7 +156,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['update'])) {
             <a href="view_sales.php">Sales</a>
             <a href="add_sales.php">Add Sales</a>
             <a href="expenses.php">Expenses</a>
-            <a href="graphs.php">Graphs</a>
         </nav>
         <div class="header-right">
             <?php if (isset($_SESSION['username'])) : ?>

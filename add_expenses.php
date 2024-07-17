@@ -14,7 +14,7 @@ $date = '';
 $showPopup = false;
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Fetch and validate form data
+
     $description = isset($_POST['description']) ? trim($_POST['description']) : '';
     $amount = isset($_POST['amount']) ? trim($_POST['amount']) : '';
     $date = isset($_POST['date']) ? $_POST['date'] : '';
@@ -30,10 +30,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $errors['date'] = "Date is required.";
     }
 
-    // If no errors, proceed with database insertion
+
     if (count($errors) == 0) {
 
-        // Prepare SQL statement for expense insertion with 'deleted' column set to 1
+
         $sql = "INSERT INTO expenses (date, description, amount, deleted) VALUES (?, ?, ?, 1)";
         $stmt = mysqli_prepare($conn, $sql);
         if ($stmt === false) {
@@ -43,13 +43,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             mysqli_stmt_bind_param($stmt, "ssd", $date, $description, $amount);
 
             if (mysqli_stmt_execute($stmt)) {
-                // Store values in session variables
+   
                 $_SESSION['popup_description'] = $description;
                 $_SESSION['popup_amount'] = $amount;
                 $_SESSION['popup_date'] = $date;
 
                 $showPopup = true;
-                // Clear input fields after successful submission
+    
                 $description = '';
                 $amount = '';
                 $date = '';
